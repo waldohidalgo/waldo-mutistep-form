@@ -16,7 +16,9 @@ export default function Thanks() {
       <h2 className={styles.titulo}>Thank you!</h2>
       <p className={styles.descripcion}>
         Thanks for confirming your subscription!
-        <br />
+      </p>
+      <p className={styles.descripcion}>
+        {" "}
         We hope you have fun using our platform. If you ever need support,
         please feel free to email us at support@loremgaming.com.
       </p>
