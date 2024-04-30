@@ -1,0 +1,28 @@
+.container {
+  box-sizing: content-box;
+  width: 30px;
+  height: 21px;
+  background-color: var(--marine-blue);
+  border-radius: 20px;
+  padding-inline: 5px;
+  display: flex;
+  align-items: center;
+  cursor: url("/images/cursor.cur") 16 16, pointer;
+}
+
+.toggle {
+  position: relative;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  transition: left 0.2s ease-in-out;
+  background-color: var(--white);
+}
+.container.active {
+  background-color: #000;
+}
+
+.container.active .toggle {
+  left: 50%;
+}

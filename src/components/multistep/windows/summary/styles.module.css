@@ -1,0 +1,125 @@
+.planSelected_descripcion {
+  text-transform: capitalize;
+}
+.titulo {
+  font-weight: 700;
+  color: var(--marine-blue);
+  font-size: 25px;
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+  }
+}
+.descripcion {
+  color: var(--cool-gray);
+  margin-top: 14px;
+  line-height: 23px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 10px;
+    line-height: normal;
+  }
+}
+.container {
+  margin-top: -63px;
+  margin-bottom: 143px;
+  background-color: #fff;
+  padding-inline: 25px 24px;
+  padding-top: 32px;
+  border-radius: 10px;
+  padding-bottom: 33px;
+  @media screen and (min-width: 768px) {
+    margin-top: 0px;
+    margin-bottom: 124px;
+    padding-inline: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+.planSelected {
+  margin-top: 24px;
+  padding: 16px 11px 0px 15px;
+
+  background-color: var(--magnolia);
+  @media screen and (min-width: 768px) {
+    margin-top: 42px;
+    padding: 20px 31px 0px 25px;
+  }
+}
+
+.contenedor_planSelected_contenido {
+  display: flex;
+  border-bottom: 1px solid var(--cool-gray);
+  padding-bottom: 11px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 26px;
+  }
+}
+
+.planSelected_descripcion_plan {
+  color: var(--marine-blue);
+  font-weight: 700;
+  font-size: 14px;
+  @media screen and (min-width: 768px) {
+    font-size: 1rem;
+  }
+}
+.planSelected_descripcion_change {
+  margin-top: 5px;
+  font-size: 14px;
+  color: var(--cool-gray);
+  text-decoration: underline;
+  cursor: url("/images/cursor.cur") 16 16, pointer;
+}
+.planSelected_descripcion_change:hover {
+  color: var(--purplish-blue);
+}
+.planSelected_price {
+  margin-left: auto;
+  color: var(--marine-blue);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.addOnsSelected {
+  padding-bottom: 23px;
+}
+.addOnSelected {
+  padding-top: 16px;
+  display: flex;
+  color: var(--cool-gray);
+  @media screen and (min-width: 768px) {
+    padding-top: 18px;
+  }
+}
+.addOnSelected_price {
+  margin-left: auto;
+  font-size: 14px;
+  color: var(--marine-blue);
+}
+.total {
+  padding: 20px 12px 0px 14px;
+
+  display: flex;
+  @media screen and (min-width: 768px) {
+    padding: 28px 31px 0px 25px;
+  }
+}
+.total_description {
+  font-size: 14px;
+  color: var(--cool-gray);
+}
+.total_price {
+  margin-left: auto;
+  color: var(--purplish-blue);
+  font-weight: 700;
+  font-size: 17px;
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
+}
+.addOnSelected_description {
+  font-size: 14px;
+  @media screen and (min-width: 768px) {
+    font-size: 1rem;
+  }
+}

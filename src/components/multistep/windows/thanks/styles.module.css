@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 79px;
+  background-color: #fff;
+  margin-top: -63px;
+  border-radius: 10px;
+  padding-bottom: 84px;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    padding-top: 7.2rem;
+    padding-bottom: 0;
+  }
+}
+.icon img {
+  width: 58px;
+  height: 58px;
+  @media screen and (min-width: 768px) {
+    width: 80px;
+    height: 80px;
+  }
+}
+.titulo {
+  font-weight: 700;
+  font-size: 22px;
+  text-shadow: 1px 1px;
+  letter-spacing: 2px;
+  margin-top: 19px;
+  color: var(--marine-blue);
+  @media screen and (min-width: 768px) {
+    margin-top: 2rem;
+    font-size: 1.85rem;
+  }
+}
+
+.descripcion {
+  line-height: 25px;
+  margin-top: 10px;
+  color: var(--cool-gray);
+  text-align: center;
+  padding-inline: 20px;
+  @media screen and (min-width: 768px) {
+    margin-top: 1rem;
+    line-height: 1.5rem;
+    padding-inline: 0;
+  }
+}

@@ -1,0 +1,129 @@
+.container_toggle {
+  margin-top: 23px;
+  margin-bottom: 25px;
+  padding-block: 16px;
+  display: flex;
+  border-radius: 5px;
+  justify-content: center;
+  background-color: var(--magnolia);
+  @media screen and (min-width: 768px) {
+    margin-top: 31px;
+    margin-bottom: 0px;
+  }
+}
+
+.wrapper_toggle {
+  display: inline-block;
+}
+
+.monthly,
+.yearly {
+  font-size: 15px;
+  color: var(--cool-gray);
+  font-weight: 700;
+}
+.monthly {
+  margin-left: -15px;
+  margin-right: 22px;
+}
+.yearly {
+  margin-left: 22px;
+}
+.selected {
+  color: var(--marine-blue);
+}
+.container {
+  padding-right: 4px;
+  background-color: #fff;
+  padding-inline: 25px 24px;
+  margin-top: -63px;
+  padding-top: 32px;
+  border-radius: 10px;
+  padding-bottom: 1px;
+  margin-bottom: 9px;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    padding-inline: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-radius: 0;
+    margin-bottom: 112px;
+  }
+}
+.titulo {
+  font-size: 21px;
+  letter-spacing: 3px;
+  word-spacing: -5px;
+  text-shadow: 1px 1px;
+  color: var(--marine-blue);
+  @media screen and (min-width: 768px) {
+    font-size: 1.8rem;
+  }
+}
+.descripcion {
+  margin-top: 14px;
+  color: var(--cool-gray);
+  line-height: 23px;
+  @media screen and (min-width: 768px) {
+    line-height: normal;
+  }
+}
+.container_plans {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 24px;
+  gap: 14px;
+  @media screen and (min-width: 768px) {
+    gap: 18px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 41px;
+  }
+}
+.plan {
+  border: 1px solid var(--light-gray);
+  padding-block: 16px 19px;
+  padding-left: 15px;
+  border-radius: 10px;
+  cursor: url("/images/cursor.cur") 16 16, pointer;
+  display: flex;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 0;
+    padding-top: 18px;
+    flex-direction: column;
+  }
+}
+.plan img {
+  width: 40px;
+}
+.plan_content {
+  margin-top: 0px;
+  margin-left: 16px;
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+    padding-bottom: 15px;
+    margin-top: 44px;
+  }
+}
+.plan_content_title {
+  font-size: 1rem;
+  color: var(--marine-blue);
+  text-transform: capitalize;
+}
+.plan_content_price {
+  margin-top: 6px;
+  font-size: 14px;
+  color: var(--cool-gray);
+  font-weight: 700;
+}
+
+.free {
+  margin-top: 6px;
+  font-size: 12px;
+  color: var(--marine-blue);
+  font-weight: 600;
+}
+
+.selected_plan {
+  background-color: var(--magnolia);
+  border-color: var(--purplish-blue);
+}
