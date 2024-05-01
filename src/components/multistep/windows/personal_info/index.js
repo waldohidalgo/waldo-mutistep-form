@@ -45,13 +45,15 @@ export default function PersonalInfo({
     const inputData = e.nativeEvent.data;
 
     if (!/^\d+$/.test(phone)) {
-      inputPhone.setCustomValidity("This field is required");
+      inputPhone.setCustomValidity(
+        "This field Phone is required. Max length 10 digits"
+      );
     } else {
       inputPhone.setCustomValidity("");
     }
     setInputFormActived({ ...inputFormActived, phone: true });
 
-    if (inputData === null || /\d/.test(inputData)) {
+    if (inputData === null || /\d+/.test(inputData)) {
       if (phone.length <= 10) {
         dispatch(changePersonalInfoPhone(phone));
       }

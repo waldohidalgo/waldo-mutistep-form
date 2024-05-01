@@ -28,7 +28,7 @@
   margin-top: 19px;
   color: var(--marine-blue);
   text-align: center;
-  width: max-content;
+  align-self: stretch;
   @media screen and (min-width: 768px) {
     margin-top: 2rem;
     font-size: 1.85rem;

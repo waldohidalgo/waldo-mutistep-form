@@ -51,7 +51,9 @@ export default function Multistep() {
     }
 
     if (!/^\d+$/.test(phone)) {
-      inputPhone.setCustomValidity("This field Phone is required");
+      inputPhone.setCustomValidity(
+        "This field Phone is required. Max length 10 digits."
+      );
     } else {
       inputPhone.setCustomValidity("");
     }
