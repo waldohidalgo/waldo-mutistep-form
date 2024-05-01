@@ -44,19 +44,17 @@ export default function PersonalInfo({
     const phone = e.target.value;
     const inputData = e.nativeEvent.data;
 
-    if (!/^\d+$/.test(phone)) {
+    setInputFormActived({ ...inputFormActived, phone: true });
+
+    if (inputData === null || /^\d+$/.test(inputData)) {
+      if (phone.length <= 10) {
+        inputPhone.setCustomValidity("");
+        dispatch(changePersonalInfoPhone(phone));
+      }
+    } else {
       inputPhone.setCustomValidity(
         "This field Phone is required. Max length 10 digits"
       );
-    } else {
-      inputPhone.setCustomValidity("");
-    }
-    setInputFormActived({ ...inputFormActived, phone: true });
-
-    if (inputData === null || /\d+/.test(inputData)) {
-      if (phone.length <= 10) {
-        dispatch(changePersonalInfoPhone(phone));
-      }
     }
   };
 

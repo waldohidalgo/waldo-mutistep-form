@@ -50,7 +50,7 @@ export default function Multistep() {
       inputEmail.setCustomValidity("");
     }
 
-    if (!/^\d+$/.test(phone)) {
+    if (!/^\d{1,10}$/.test(phone)) {
       inputPhone.setCustomValidity(
         "This field Phone is required. Max length 10 digits."
       );
